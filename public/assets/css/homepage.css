@@ -1,0 +1,189 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.image{
+    background-image: url('/assets/img/jumbotron.png');
+    background-repeat: no-repeat;
+width: 10px;
+height: 20px;
+}
+.navbar-nav .nav-link{
+  padding-left:25px !important;
+  padding-right:25px !important;
+}
+.jumbotron{
+    background-color: #fff0 !important;
+}
+.half-border::after{
+    content: ""; 
+    display: block;
+    width: 20%; 
+    padding-top: 20px; 
+    border-bottom: 8px solid #333333;
+}
+.rectangel-icon{
+    position: static;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #333333;
+    width: 60%;
+    display: flex;
+    justify-content:center !important;
+    align-items: center !important;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+/* margin  */
+.mt-4r {
+    margin-top: 4rem !important;
+}
+.mt-5r {
+    margin-top: 5rem !important;
+}
+.mt-6r {
+    margin-top: 6rem !important;
+}
+.mt-7r {
+    margin-top: 7rem !important;
+}
+.mt-8r {
+    margin-top: 8rem !important;
+}
+.mt-9r {
+    margin-top: 9rem !important;
+}
+.mt-10r {
+    margin-top: 10rem !important;
+}
+/* color  */
+.main-color{
+    color: #333333;
+}
+.secondary-color {
+    color: #706C61;
+}
+.cyan-color {
+    color: #00CDC2;
+}
+.lightcyan-color {
+    color: #E1F4F3;
+}
+a .lightcyan-color:hover{
+    color:#00CDC2;
+}
+a:hover{
+    text-decoration: none;
+    color:#00CDC2;
+}
+/* font family  */
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.rubik{
+    font-family: 'Rubik', sans-serif;
+}
+/* font size  */
+.fontsize-12{
+    font-size: 12px;
+}
+.fontsize-13{
+    font-size: 13px;
+}
+.fontsize-14{
+    font-size: 14px;
+}
+.fontsize-15{
+    font-size: 15px;
+}
+.fontsize-16{
+    font-size: 16px;
+}
+.fontsize-16{
+    font-size: 16px;
+}
+.fontsize-17{
+    font-size: 17px;
+}
+.fontsize-18{
+    font-size: 18px;
+}
+.fontsize-19{
+    font-size: 19px;
+}
+.fontsize-20{
+    font-size: 20px;
+}
+.fontsize-21{
+    font-size: 21px;
+}
+.fontsize-22{
+    font-size: 22px;
+}
+.fontsize-23{
+    font-size: 23px;
+}
+.fontsize-24{
+    font-size: 24px;
+}
+.fontsize-25{
+    font-size: 25px;
+}
+.fontsize-26{
+    font-size: 26px;
+}
+.fontsize-27{
+    font-size: 27px;
+}
+.fontsize-28{
+    font-size: 28px;
+}
+.fontsize-29{
+    font-size: 29px;
+}
+.fontsize-30{
+    font-size: 30px;
+}
+.fontsize-31{
+    font-size: 31px;
+}
+.fontsize-32{
+    font-size: 32px;
+}
+.fontsize-33{
+    font-size: 33px;
+}
+.fontsize-34{
+    font-size: 34px;
+}
+.fontsize-35{
+    font-size: 35px;
+}
+.fontsize-36{
+    font-size: 36px;
+}
+.fontsize-37{
+    font-size: 37px;
+}
+.fontsize-38{
+    font-size: 38px;
+}
+.fontsize-39{
+    font-size: 39px;
+}
+.fontsize-40{
+    font-size: 40px;
+}
+.fontsize-48{
+    font-size: 48px;
+}
+.fontsize-49{
+    font-size: 49px;
+}
