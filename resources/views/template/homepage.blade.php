@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#333333">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
     <title>Curriculum Vitae - Reyhan</title>
     <link rel="shortcut icon" href="{{ asset('assets/img/logoR.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -96,8 +97,8 @@
                     </div>
                     <div class="rectangel-icon mt-9r">
                         <div class="row text-center poppins fontsize-16">
-                            <a href="" class="lightcyan-color">
-                                DOWNLOAD CV
+                            <a href="" class="lightcyan-color lato fontsize-15">
+                                Umur <span class="light-color" id="myage"></span> tahun
                             </a>
                         </div>
                     </div>
@@ -120,8 +121,8 @@
             </div>
         </div>
         <div class="fontsize-15 light-color text-center pt-5 mx-auto position-relative" style="margin: 0 8rem !important;z-index:2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim molestiae nobis necessitatibus doloremque qui voluptatem sunt dicta velit harum error sint totam esse rerum fugit voluptates, omnis, distinctio ipsa illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus veritatis nemo placeat nobis voluptate repudiandae, eveniet animi harum totam a? Ut dolores explicabo necessitatibus tempora? Maiores perferendis esse possimus.
+            Full stack developer dengan pengalaman lebih dari 3 tahun dan telah membuat berbagai macam jenis aplikasi website maupun mobile, dan dapat berkerja sendiri ataupun berkolaborasi dengan team,
+            Bersemangat menciptakan aplikasi yang hebat, dan belajar tiap hari untuk pengembangan diri, motto saya menjadi simple dan mudah itu baik
         </div>
     </div>
         <div class="text-center" style="position: relative;margin-top:-3rem !important">
@@ -254,7 +255,7 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-5 mt-2">
-                        <img src="{{ asset('assets/img/trshlife.png') }}" alt="" width="450px" style="border-radius: 10px">
+                        <img src="{{ asset('assets/img/trshlife.png') }}" alt="" height="210px" width="450px" style="border-radius: 10px">
                     </div>
                     <div class="col-5 ml-4">
                         <div class="lato fontsize-24 light-color">trshlife</div>
@@ -332,7 +333,9 @@
                 loop:true,
                 autoplay:true
             });
+            var age = new Date().getFullYear();
             document.getElementById("year").innerHTML = new Date().getFullYear();
+            document.getElementById('myage').innerHTML = age-1996;
         });
     </script>
 </body>
