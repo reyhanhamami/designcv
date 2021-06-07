@@ -53,9 +53,9 @@
                 
                 
                 <div class="form-group row">
-                    <div class="col-sm-10 ">
-                        <button class="btn btn-outline-success">Kirim data</button>
-                        <a href="{{ route('homepage') }}" class="btn btn-outline-danger">Batal</a>
+                    <div class="col-sm-12 text-center">
+                        <button class="btn btn-success">Kirim data</button>
+                        <a href="{{ route('homepage') }}" class="btn btn-danger">Batal</a>
                     </div>
                 </div>
             </form>

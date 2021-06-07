@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#333333">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
     <title>Curriculum Vitae - Reyhan</title>
     {{-- style  --}}
     @method('before-style')
@@ -19,9 +18,9 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row position-relative">
-                <div class="col-6 position-absolute" style="left:0;top:0">
+                <div class="col-12 col-lg-6 position-absolute be-relative" style="left:0;top:0">
                     <div class="ml-4">
-                        <div class="lato fontsize-25 half-border main-color">MUHAMMAD REYHAN HAMAMI</div>
+                        <div class="lato fontsize-21 half-border main-color">MUHAMMAD REYHAN HAMAMI</div>
                         <div class="lato fontsize-19 mt-3 secondary-color">FULL STACK DEVELOPER</div>
                         <div class="lato fontsize-15 mt-2 secondary-color">LARAVEL - FLUTTER - VUEJS</div>
                         <div class="row mt-5">
@@ -29,7 +28,7 @@
                             <div class="dot mr-2"></div>
                             <div class="dot"></div>
                         </div>
-                        <div class="rectangel-icon mt-7r">
+                        <div class="rectangel-icon mt-7r hidden-xs">
                             <div class="row text-center ">
                                 <div class="col" style="margin-top:3.5px">
                                     <a href="https://www.instagram.com/mreyhanhamami/" target="_blank">
@@ -55,10 +54,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 position-relative mx-auto" style="top:-90px;right:7px">
-                    <img src="{{ asset('assets/img/jumbotron.png') }}" alt="">
+                <div class="col-11 col-md-5 position-relative mx-auto hidden" style="top:-8rem;left:2rem;z-index: -1 !important">
+                    <img src="{{ asset('assets/img/jumbotron.png') }}" alt="" style="">
                 </div>
-                <div class="col-4 pl-5 position-absolute" style="right:0;top:0">
+                <div class="col-4 pl-5 position-absolute hidden" style="right:0;top:0">
                     <div class="row d-flex align-items-end">
                         <div class="col-6 rubik fontsize-49">HELLO</div>
                         <div class="col-1 "><div class="dot"></div></div>
@@ -96,11 +95,11 @@
             <div class="lato fontsize-20 light-color text-center pt-5" >
                 Tentang Saya
             </div>
-            <div style="position: absolute;top:-10rem !important;left:20rem !important" >
+            <div class="hidden" style="position: absolute;top:-10rem !important;left:20rem !important" >
                 <img src="{{ asset('assets/img/aboutus.png') }}" alt="">
             </div>
         </div>
-        <div class="fontsize-15 light-color text-center pt-5 mx-auto position-relative" style="margin: 0 8rem !important;z-index:2">
+        <div class="fontsize-15 light-color text-center pt-5 mx-auto position-relative margin-about" style="z-index:2">
             Full stack developer dengan pengalaman lebih dari 3 tahun dan telah membuat berbagai macam jenis aplikasi website maupun mobile, dan dapat berkerja sendiri ataupun berkolaborasi dengan team,
             Bersemangat menciptakan aplikasi yang hebat, dan belajar tiap hari untuk pengembangan diri, motto saya menjadi simple dan mudah itu baik
         </div>
@@ -116,7 +115,7 @@
         </div>
         <div class="row">
 
-            <div class="col-6 text-center">
+            <div class="col-12 col-md-6 col-md-6 text-center">
                 <span class="fas fa-laptop-code fa-2x btn-service"></span>
                 <div class="lato fontsize-20">Web Development</div>
                 <div class="fontsize-15 mt-3">Membuat aplikasi kustom, berdasarkan permintaan berbasis web, dengan harga terjangkau, menggunakan bahasa pemrograman php, freamwork 
@@ -128,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="col-6 text-center">
+            <div class="col-12 col-md-6 text-center">
                 <span class="fas fa-code fa-2x btn-service"></span>
                 <div class="lato fontsize-20">Apps Development</div>
                 <div class="fontsize-15 mt-3">Membuat aplikasi kustom, berdasarkan permintaan berbasis android, dengan harga terjangkau, menggunakan bahasa pemrograman dart, freamwork 
@@ -137,7 +136,7 @@
                 </div>
             </div>
 
-            <div class="col-6 text-center mt-5">
+            <div class="col-12 col-md-6 text-center mt-5">
                 <span class="fas fa-database fa-2x btn-service"></span>
                 <div class="lato fontsize-20">Data base</div>
                 <div class="fontsize-15 mt-3">Menggunakan manajemen basis data
@@ -147,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="col-6 text-center mt-5">
+            <div class="col-12 col-md-6 text-center mt-5">
                 <span class="fas fa-hdd fa-2x btn-service"></span>
                 <div class="lato fontsize-20">Deployment Aplication</div>
                 <div class="fontsize-15 mt-3">Mendistribusikan aplikasi yang dibuat hingga ke tangan pengguna dan bisa dipakai oleh pengguna dengan baik, menggunakan server hosting local maupun internasional, atau upload ke play store jika berbentuk aplikasi android
@@ -164,10 +163,10 @@
         <div class="container">
             <div class="lato fontsize-21 light-color text-center pt-5" >Pendidikan</div>
             <div class="row">
-                <div class="col-3 pl-5">
+                <div class="col-3 pl-5 hidden">
                     <img src="{{ asset('assets/img/education.png') }}" alt="">
                 </div>
-                <div class="col-8 mt-5 ml-5 pl-3">
+                <div class="col-8  mt-5 ml-5 pl-3">
                     <ul>
                         <li class="fontsize-17 light-color">SMK TARUNA BHAKTI - <span class="lightcyan-color">Teknik Komputer Dan Jaringan</span> - DEPOK
                             <br>
@@ -223,10 +222,10 @@
             {{-- carousell porto  --}}
             <div class="carousel-porto owl-carousel">
                 <div class="row mt-3">
-                    <div class="col-5 mt-2">
+                    <div class="col-11 col-md-5 mt-2">
                         <img src="{{ asset('assets/img/intranet.png') }}" alt="" width="450px" style="border-radius: 10px">
                     </div>
-                    <div class="col-5 ml-4">
+                    <div class="col-11 col-md-5 ml-4">
                         <div class="lato fontsize-24 light-color">Intranet</div>
                         <div class="fontsize-14 light-color mt-2">Aplikasi Intranet berfungsi sebagai gerbang login utama untuk dapat bisa 
                             mengakses internet public maupun local di area kantor, serta memiliki berbagai fitur seperti
@@ -234,10 +233,10 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-5 mt-2">
+                    <div class="col-11 col-md-5 mt-2">
                         <img src="{{ asset('assets/img/trshlife.png') }}" alt="" height="210px" width="450px" style="border-radius: 10px">
                     </div>
-                    <div class="col-5 ml-4">
+                    <div class="col-11 col-md-5 ml-4">
                         <div class="lato fontsize-24 light-color">trshlife</div>
                         <div class="fontsize-14 light-color mt-2">Aplikasi trshlife adalah aplikasi pengelolaan limbah plastik yang dihasilkan dari
                             minuman maupun makanan kemasan berbentuk plastik, dimana fungsi dari aplikasi ini untuk mengenerate QR Code lalu di cetak
@@ -248,10 +247,10 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-5 mt-2">
+                    <div class="col-11 col-md-5 mt-2">
                         <img src="{{ asset('assets/img/seller.png') }}" alt="" height="210px" width="450px" style="border-radius: 10px">
                     </div>
-                    <div class="col-5 ml-4">
+                    <div class="col-11 col-md-5 ml-4">
                         <div class="lato fontsize-24 light-color">Pengelola reseller dan barang</div>
                         <div class="fontsize-14 light-color mt-2">Aplikasi yang berguna untuk mengontrol reseller dan juga
                             memantau barang masuk dan keluar, fungsinya agar supplier dapat mengetahui reseller mengambil 
@@ -261,10 +260,10 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-5 mt-2">
+                    <div class="col-11 col-md-5 mt-2">
                         <img src="{{ asset('assets/img/blog.png') }}" alt="" width="450px" style="border-radius: 10px">
                     </div>
-                    <div class="col-5 ml-4">
+                    <div class="col-11 col-md-5 ml-4">
                         <div class="lato fontsize-24 light-color">Blog</div>
                         <div class="fontsize-14 light-color mt-2">blog dari badan wakaf al-quran yang dibuat menggunakan 
                             wordpress dan di install di server, dengan fitur-fitur default dari wordpress untuk membuat blog
@@ -272,10 +271,10 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-5 mt-2">
+                    <div class="col-11 col-md-5 mt-2">
                         <img src="{{ asset('assets/img/validasi.png') }}" alt="" width="450px" style="border-radius: 10px">
                     </div>
-                    <div class="col-5 ml-4">
+                    <div class="col-11 col-md-5 ml-4">
                         <div class="lato fontsize-24 light-color">Aplikasi Pengontrol Uang masuk</div>
                         <div class="fontsize-14 light-color mt-2">Aplikasi ini dibuat untuk memecahkan masalah dari pihak penyedia layanan transfer
                             bank, dimana proses transfer uang yang masuk di penyedia layanan dan di transfer ke rekening bank penerima dikumpulin 
@@ -285,10 +284,10 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-5 mt-2">
+                    <div class="col-11 col-md-5 mt-2">
                         <img src="{{ asset('assets/img/agent.png') }}" alt="" width="450px" style="border-radius: 10px">
                     </div>
-                    <div class="col-5 ml-4">
+                    <div class="col-11 col-md-5 ml-4">
                         <div class="lato fontsize-24 light-color">Aplikasi CRM(customer relationship management)</div>
                         <div class="fontsize-14 light-color mt-2">Aplikasi yang berfungsi sebagai layanan penyambung dengan customer yang 
                             terintegrasi dengan sistem, sehingga setiap percakapan telepon, bukti donasi, terekam dengan baik, dan juga 
@@ -298,7 +297,7 @@
                 </div>
             </div>
             {{-- end carousel  --}}
-            <div class="mt-3" style="margin: 1rem 5rem !important">
+            <div class="mt-3 margin-footer" style="">
                 <div class="light-color fontsize-15 mx-5 text-center">
                     <span class="font-weight-bold">Ingin membuat suatu aplikasi yang hebat??</span>
                     <br> 

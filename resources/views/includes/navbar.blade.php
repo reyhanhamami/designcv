@@ -1,5 +1,5 @@
 {{-- navbar  --}}
-<nav class="navbar navbar-expand-lg navbar-light ">
+<nav class="navbar navbar-expand-lg navbar-light hidden">
 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav mx-auto lato fontsize-20" style="z-index: 2;">
     <a class="nav-link text-dark" href="{{ route('contact') }}">Contact <span class="sr-only">(current)</span></a>
