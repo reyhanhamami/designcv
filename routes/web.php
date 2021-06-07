@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','homepageController@index')->name('homepage');
+Route::get('/contactus','homepageController@contact')->name('contact');
+Route::post('/contactus','homepageController@contactpost')->name('contactpost');

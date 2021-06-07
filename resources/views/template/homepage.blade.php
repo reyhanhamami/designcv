@@ -7,34 +7,14 @@
     <meta name="theme-color" content="#333333">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
     <title>Curriculum Vitae - Reyhan</title>
-    <link rel="shortcut icon" href="{{ asset('assets/img/logoR.png') }}" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    {{-- icon fontawesome  --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/all.css') }}">
-    {{-- font  --}}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    {{-- css default  --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/homepage.css') }}">
-    {{-- owl carousel  --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
+    {{-- style  --}}
+    @method('before-style')
+    @include('includes/style')
+    @stack('after-style')
 </head>
 <body>
     {{-- navbar  --}}
-    <nav class="navbar navbar-expand-lg navbar-light ">
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav mx-auto lato fontsize-20" style="z-index: 2;">
-        <a class="nav-link text-dark" href="#">Contact <span class="sr-only">(current)</span></a>
-        <a class="nav-link text-dark" href="#">About Me</a>
-        <img src="{{ asset('assets/img/logoR.png') }}" alt="" class="text-dark" style="margin-left:.8rem">
-        <a class="nav-link text-dark ml-4" href="#">Projects</a>
-        <a class="nav-link text-dark" href="#">Education</a>
-        </div>
-    </div>
-    </nav>
+    @include('includes/navbar')
     {{-- jumbotron  --}}
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -97,7 +77,7 @@
                     </div>
                     <div class="rectangel-icon mt-9r">
                         <div class="row text-center poppins fontsize-16">
-                            <a href="" class="lightcyan-color lato fontsize-15">
+                            <a href="{{ route('contact') }}" class="lightcyan-color lato fontsize-15">
                                 Umur <span class="light-color" id="myage"></span> tahun
                             </a>
                         </div>
@@ -108,12 +88,12 @@
     </div>
 
     {{-- about me  --}}
-        <div class="text-center" style="top: -0.8rem !important;position: relative;margin-top:-3rem !important">
+        <div id='aboutme' class="text-center" style="top: -0.8rem !important;position: relative;margin-top:-3rem !important">
             <img src="{{ asset('assets/img/header.png') }}" alt="">
         </div>
     <div class="rectangel">
         <div class="position-relative">
-            <div class="lato fontsize-20 light-color text-center pt-5">
+            <div class="lato fontsize-20 light-color text-center pt-5" >
                 Tentang Saya
             </div>
             <div style="position: absolute;top:-10rem !important;left:20rem !important" >
@@ -139,7 +119,7 @@
             <div class="col-6 text-center">
                 <span class="fas fa-laptop-code fa-2x btn-service"></span>
                 <div class="lato fontsize-20">Web Development</div>
-                <div class="fontsize-15 mt-3">Membuat aplikasi kustom berdasarkan permintaan berbasis web, dengan menggunakan bahasa pemrograman php, freamwork 
+                <div class="fontsize-15 mt-3">Membuat aplikasi kustom, berdasarkan permintaan berbasis web, dengan harga terjangkau, menggunakan bahasa pemrograman php, freamwork 
                     <span class="font-weight-bold">laravel</span>, 
                     <span class="font-weight-bold">bootstrap</span>,
                     <span class="font-weight-bold">jquery</span> atau
@@ -151,7 +131,7 @@
             <div class="col-6 text-center">
                 <span class="fas fa-code fa-2x btn-service"></span>
                 <div class="lato fontsize-20">Apps Development</div>
-                <div class="fontsize-15 mt-3">Membuat aplikasi kustom berdasarkan permintaan berbasis android, dengan menggunakan bahasa pemrograman dart, freamwork 
+                <div class="fontsize-15 mt-3">Membuat aplikasi kustom, berdasarkan permintaan berbasis android, dengan harga terjangkau, menggunakan bahasa pemrograman dart, freamwork 
                     <span class="font-weight-bold">flutter</span>, 
                     yang terintegrasi dengan API dan halaman admin, dengan pengalaman kurang dari 1 tahun, Garansi revisi tanpa batas hingga aplikasi selesai dibuat.
                 </div>
@@ -177,12 +157,12 @@
     </div>
 
     {{-- education --}}
-        <div class="text-center" style="top: -0.8rem !important;position: relative;margin-top:-3rem !important">
+        <div id="education" class="text-center" style="top: -0.8rem !important;position: relative;margin-top:-3rem !important">
                 <img src="{{ asset('assets/img/header.png') }}" alt="">
         </div>
-    <div class="rectangel">
+    <div class="rectangel" >
         <div class="container">
-            <div class="lato fontsize-21 light-color text-center pt-5">Pendidikan</div>
+            <div class="lato fontsize-21 light-color text-center pt-5" >Pendidikan</div>
             <div class="row">
                 <div class="col-3 pl-5">
                     <img src="{{ asset('assets/img/education.png') }}" alt="">
@@ -239,7 +219,7 @@
     </div>
     <div class="rectangel" style="padding-bottom: 1rem !important">
         <div class="container">
-            <div class="lato fontsize-21 text-center light-color pt-5">Portofolio</div>
+            <div class="lato fontsize-21 text-center light-color pt-5" id="projects">Portofolio</div>
             {{-- carousell porto  --}}
             <div class="carousel-porto owl-carousel">
                 <div class="row mt-3">
@@ -264,6 +244,19 @@
                             dan ditempelkan di kemasan plastik, agar pengguna dapat menscan qr code tersebut dan mendapatkan point yang dapat
                             ditukarkan menjadi uang, fiturnya generate qr, daftar sebagai mitra, pick up sampah, scan qr, tukar point, mencari lokasi
                             mitra, dll.
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-5 mt-2">
+                        <img src="{{ asset('assets/img/seller.png') }}" alt="" height="210px" width="450px" style="border-radius: 10px">
+                    </div>
+                    <div class="col-5 ml-4">
+                        <div class="lato fontsize-24 light-color">Pengelola reseller dan barang</div>
+                        <div class="fontsize-14 light-color mt-2">Aplikasi yang berguna untuk mengontrol reseller dan juga
+                            memantau barang masuk dan keluar, fungsinya agar supplier dapat mengetahui reseller mengambil 
+                            berapa stock produk, lalu laku berapa, dan juga hutang nominal reseller dari hasil penjualan barang,
+                            serta juga sebagai pengontrol stock barang yang masuk dan keluar.
                         </div>
                     </div>
                 </div>
@@ -313,30 +306,18 @@
                     izikan saya untuk bergabung dan membuat aplikasi yang luar biasa,
                     saya akan lakukan yang terbaik agar aplikasi yang anda inginkan bisa terwujud dengan hasil yang sangat terbaik
                 </div>
-                <div class="btn-rekrut mt-2 font-weight-bold">REKRUT SAYA</div>
+                <a href="{{ route('contact') }}" style="color:#333333 !important">
+                    <div class="btn-rekrut mt-2 font-weight-bold">
+                        REKRUT SAYA
+                    </div>
+                </a>
                 <div class="light-color text-center mt-4 pb-0">&copy 2021 - <span id='year'></span> &#9775 Muhammad Reyhan Hamami &#9775 All rights reserved.</div>
             </div>
         </div>
         
     </div>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-    <script>
-        $(document).ready(function(){
-            $(".carousel-porto").owlCarousel({
-                items: 1,
-                dot:true,
-                loop:true,
-                autoplay:true
-            });
-            var age = new Date().getFullYear();
-            document.getElementById("year").innerHTML = new Date().getFullYear();
-            document.getElementById('myage').innerHTML = age-1996;
-        });
-    </script>
+    @stack('before-script')
+    @include('includes/script')
+    @stack('after-script')
 </body>
 </html>
