@@ -20,6 +20,7 @@
         </div>
         <div class="rectangel">
             <div class="text-center fontsize-20 light-color pt-5">Hubungi saya</div>
+            <div class="text-small text-center light-color">*semua data yang dikirim dijamin kerahasiannya</div>
             
         <div class="container mt-4">
             @if(session('success'))
