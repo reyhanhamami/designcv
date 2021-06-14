@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\contactModel;
 use Illuminate\Http\Request;
 use App\Mail\sendNotifRekrut;
+use Ixudra\Curl\Facades\Curl;
 use Illuminate\Support\Facades\Mail;
 
 class homepageController extends Controller
@@ -36,11 +37,21 @@ class homepageController extends Controller
         (empty($hp)) ? $nohp = $nohp : $nohp = $hp;
         $data['phone'] = $nohp;
         $data['ipaddress'] = $ip;
+        $dataSendMessage = array(
+            'phone' => $data['phone'] ? $data['phone'] : '6289663085777',
+            'message' => 'Terimakasih sudah menghubungi saya, secepatnya akan saya respon, pesan anda seperti berikut : '. $data['description']
+        );
         try {
             contactModel::create($data);
             Mail::to('reyhanhamami@gmail.com')->send(new sendNotifRekrut($data));
+            Curl::to('https://tes-bot-whatsapp.herokuapp.com/sendapiwhatsappnode')
+            ->withData($dataSendMessage)->asJson(true)->post();
             if (!empty($data['email'])) {
                 Mail::to($data['email'])->send(new sendNotifRekrut($data));
+            } 
+            if (!empty($data['phone'])) {
+                Curl::to('https://tes-bot-whatsapp.herokuapp.com/sendapiwhatsappnode')
+                ->withData($dataSendMessage)->asJson(true)->post();
             }
             return redirect()->back()->with('success','data berhasil dikirim, Terimakasih telah menghubungi saya, secepatnya akan saya balas');
         } catch (\Execption $th) {
